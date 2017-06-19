@@ -1,0 +1,7 @@
+[package]
+name = "RustStuff"
+version = "0.1.0"
+authors = ["ClemensFMN <clemens@familie-novak.net>"]
+
+[dependencies]
+rand="0.3.0"
