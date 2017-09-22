@@ -4,6 +4,16 @@ struct Point {
 	y: u32
 }
 
+impl Point {
+	fn new() -> Point {
+		Point{x:0, y:0}
+	}
+
+	fn build(x:u32, y:u32) -> Point {
+		Point{x:x, y:y}
+	}
+}
+
 #[derive(Debug)]
 struct Rectangle {
 	p1: Point,
@@ -28,6 +38,12 @@ impl Rectangle {
 
 
 pub fn run_me() {
+	let p0 = Point::new();
+	println!("{:?}", p0);
+	let p02 = Point::build(1,2);
+	println!("{:?}", p02);
+
+
 	let p1 = Point {x:2, y:5};
 	println!("{:?}",p1);
 	println!("Point with coords: {},{}", p1.x, p1.y);

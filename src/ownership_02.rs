@@ -5,7 +5,7 @@
 fn use_ro_vec(vec: &Vec<i32>) -> i32 {
     let mut sum = 0;
     for el in vec {
-        sum = sum + el;
+        sum = sum + *el;    // in light of the issue in the next function, using *el is probalby more consistent...
     }
     sum
 }

@@ -1,7 +1,6 @@
 
 
 fn func1(vec: &Vec<i32>) -> i32 {
-
 	// the referenced value is not allowed to change --> this does not work
 	// vec[0] = 4;
 	let mut sum = 0;
@@ -50,6 +49,8 @@ pub fn run_me() {
    // we can pass the reference to a function which can use it read-only
    let sum = func1(&v2);
    println!("Sum of v is: {}", sum);
+   // and can still ue the vector afterwards...
+   println!("{:?}", v2);
 
    // Mutable Stuff
    // create a mutable variable

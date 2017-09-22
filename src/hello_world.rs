@@ -38,6 +38,26 @@ enum SomeEnum {
 }
 
 
+fn qsort(lst:&Vec<i32>) -> Vec<i32> {
+  let res = Vec::new();
+  if lst.len() == 0  {
+    return res
+  }
+  let pivot = lst[0];
+  let mut l1:Vec<i32> = Vec::new();
+  let mut l2:Vec<i32> = Vec::new();
+
+  for e in lst {
+    if *e < pivot {l1.push(*e);}
+    if *e > pivot {l2.push(*e);}
+  }
+  let mut r1 = qsort(&l1);
+  let mut r2 = qsort(&l2);
+  r1.push(pivot);
+  r1.append(&mut r2);
+  r1
+}
+
 pub fn run_me() {
 
    println!("Hello, world!");
@@ -87,5 +107,8 @@ pub fn run_me() {
     };
 
     println!("Value: {}", res);
+
+    let v = vec![3,4,2,5,1,0];
+    println!("{:?}", qsort(&v));
     
 }
