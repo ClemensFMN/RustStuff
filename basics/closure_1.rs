@@ -14,7 +14,7 @@ fn my_filter2(data: &Vec<i32>, filter_val: i32) -> Vec<i32> {
 }
 
 
-pub fn run_me() {
+fn main() {
 	// define a var outside the closure
 	let y = 10;
 	let cl1 = |x| {

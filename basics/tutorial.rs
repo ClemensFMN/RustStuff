@@ -3,7 +3,7 @@ use std::io;
 use std::cmp::Ordering;
 use tutorial::rand::Rng;
 
-pub fn run_me() {
+fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1, 101);
     println!("Number: {}", secret_number);

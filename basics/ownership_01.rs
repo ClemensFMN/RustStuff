@@ -15,7 +15,7 @@ fn func2(vec: &mut Vec<i32>) -> i32 {
 	0
 }
 
-pub fn run_me() {
+fn main() {
 
    //Immutable Stuff
 

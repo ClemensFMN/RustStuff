@@ -1,4 +1,4 @@
-pub fn run_me() {
+fn main() {
 
    let v = vec![3,5,11,9];
 

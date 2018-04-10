@@ -111,7 +111,7 @@ fn primefact_v1(num: u32) -> Vec<u32> {
 
 
 
-pub fn run_me() {
+fn main() {
     let f = Fib{curr:1, next:1};
     for i in f.take(10) {
         println!("{}", i);

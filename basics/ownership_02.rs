@@ -62,7 +62,7 @@ fn use_struct(s: &mut simple_struct) {
     s.val1 = s.val1 + s.val2;
 }
 
-pub fn run_me() {
+fn main() {
     let v1 = vec![1,2,3];
     // we need to provide a ref to the vec
     println!("{}", use_ro_vec(&v1));

@@ -17,8 +17,8 @@ struct Rect{
 
 
 pub fn run_me() {
-	let p1 = Point{x:10, y:5};
-	let serialized = serde_json::to_string(&p1).unwrap();
+    let p1 = Point{x:10, y:5};
+    let serialized = serde_json::to_string(&p1).unwrap();
     // Prints serialized = {"x":1,"y":2}
     println!("serialized = {}", serialized);
 

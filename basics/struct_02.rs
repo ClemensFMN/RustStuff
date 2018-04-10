@@ -14,7 +14,7 @@ fn prs_msg(m:Message) {
     }
 }
 
-pub fn run_me() {
+fn main() {
     println!("Struct 2");
     let m1 = Message::Quit;
     let m2 = Message::Move{x:3,y:4};

@@ -58,7 +58,7 @@ fn qsort(lst:&Vec<i32>) -> Vec<i32> {
   r1
 }
 
-pub fn run_me() {
+fn main() {
 
    println!("Hello, world!");
    let x = 5;

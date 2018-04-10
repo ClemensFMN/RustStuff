@@ -3,7 +3,7 @@ fn aoc_1() {
     let mut cnt = 0;
     let mut sum = 0;
     for i in 0..lst.len()-1 {
-        println!("i: {}, lst[i]: {}, lst[i+1]:{}", i, lst[i], lst[i+1]);
+        //println!("i: {}, lst[i]: {}, lst[i+1]:{}", i, lst[i], lst[i+1]);
         if lst[i] == lst[i+1] {
             cnt += 1;
             sum += lst[i];
@@ -40,7 +40,7 @@ fn aoc_2() {
 }
 
 
-pub fn run_me() {
+fn main() {
     aoc_1();
     aoc_2();
 }

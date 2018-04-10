@@ -37,7 +37,7 @@ impl Rectangle {
 }
 
 
-pub fn run_me() {
+fn main() {
 	let p0 = Point::new();
 	println!("{:?}", p0);
 	let p02 = Point::build(1,2);

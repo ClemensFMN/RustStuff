@@ -11,7 +11,7 @@ fn increase_health(p:&mut Player, increase:i32) {
 }
 
 
-pub fn run_me() {
+fn main() {
     let p1 = Player{name:String::from("Clemens"), health:10, score:3};
     println!("p1: {:?}", p1);
     println!("p1.health: {}", p1.health);
