@@ -12,7 +12,8 @@ fn main() {
 
     let i1:i32 = 35;
     let ones_i1 = i1.count_ones();
-    println!("Numer: {:b}, Numberof ones: {}", i1, ones_i1);
+    let zeros_i1 = i1.count_zeros();
+    println!("Number: {:b}, Number of ones: {}, Number of zeros: {}", i1, ones_i1, zeros_i1);
 
     let i2: i32 = 2;
     println!("{}", i2.pow(5));
