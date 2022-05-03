@@ -1,3 +1,5 @@
+use std::process;
+
 
 fn f1(i:i32) -> i32{
     i+1
@@ -46,10 +48,18 @@ fn main() -> () {
     println!("Option 2, successful call, got {:?}", res2);
 
     // Option 3
-    let res3 = f2(3);
+    let res3 = f2(30);
+    /*
     let res3 = res3.unwrap_or_else(|err| {
-        panic!("did not work, error {:?}", err);
+    panic!("did not work, error {:?}", err);
     });
+    */
+    // this is probably even nicer as it does not panic but stops / exits with a clean and meaningful error message
+    let res3 = res3.unwrap_or_else(|err| {
+        println!("Problem calling function f2: {}", err);
+        process::exit(1);
+    });
+
     println!("Option 3, successful call, got {:?}", res3);
 
     // Option 4, using ? as some kind of shortcut
